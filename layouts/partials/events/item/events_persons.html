@@ -2,7 +2,7 @@
   <p class="events_persons">
     {{- range $index, $persons := .GetTerms "events_persons" -}}
       {{ if gt $index 0}}, {{ end }}
-      {{- with partial "func/GetRealPerson" . -}}
+      {{- with partial "func/GetRealPerson.html" . -}}
         {{ partial "func/PrepareHTML.html" .Title }}
       {{- end -}}
     {{- end -}}
