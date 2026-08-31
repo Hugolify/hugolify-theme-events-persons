@@ -1,0 +1,8 @@
+events_persons:
+  all: Toutes les personnes de l'événement
+  discover: Découvrir la personne responsable de l'événement
+  latest: Dernière personnes de l'événement
+  more: Découvrir plus de personnes de l'événement
+  title:
+    one: Personne de l'événement
+    other: Personnes des événements

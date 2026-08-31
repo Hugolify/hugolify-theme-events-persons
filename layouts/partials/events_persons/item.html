@@ -1,0 +1,9 @@
+<article
+  class="person events_persons"
+  itemscope
+  itemtype="https://schema.org/Person"
+  {{ partial "func/SetAnim.html" (dict "element" "item") }}
+>
+  {{ partial "events_persons/item/content" . }}
+  {{ partial "events_persons/item/media" . }}
+</article>

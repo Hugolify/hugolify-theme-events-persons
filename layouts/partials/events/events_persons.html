@@ -1,0 +1,7 @@
+{{ range first 1 (.GetTerms "events_persons") }}
+  {{ partial "commons/person.html" (dict 
+    "person" . 
+    "show_description" false 
+    "show_contacts" true
+    ) }}
+{{ end }}

@@ -1,0 +1,28 @@
+module:
+  mounts:
+    - source: archetypes
+      target: archetypes
+    - source: assets
+      target: assets
+    - source: content
+      target: content
+    - source: i18n
+      target: i18n
+    - source: layouts
+      target: layouts
+
+# Images
+params:
+  persons:
+    events_persons:
+      desktop: '50x50'
+      mobile: '50x50'
+
+# Default
+permalinks:
+  taxonomy:
+    events_persons: /events/persons/
+  term:
+    events_persons: /events/persons/:slug/
+taxonomies:
+  events_person: events_persons

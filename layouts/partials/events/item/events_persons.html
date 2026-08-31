@@ -1,0 +1,10 @@
+{{ if .Params.events_persons }}
+  <p class="events_persons">
+    {{- range $index, $persons := .GetTerms "events_persons" -}}
+      {{ if gt $index 0}}, {{ end }}
+      {{- with partial "func/GetRealPerson" . -}}
+        {{ partial "func/PrepareHTML.html" .Title }}
+      {{- end -}}
+    {{- end -}}
+  </p>
+{{ end }}
