@@ -1,0 +1,11 @@
+/* components/events-person.css */
+/*
+ * Usage: <article class="item events_person">
+ */
+@layer components {
+  .events_person {
+    .btn {
+      display: none;
+    }
+  }
+}
